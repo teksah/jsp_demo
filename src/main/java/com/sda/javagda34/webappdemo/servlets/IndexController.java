@@ -1,5 +1,7 @@
 package com.sda.javagda34.webappdemo.servlets;
 
+import com.sda.javagda34.webappdemo.model.GradeSubject;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

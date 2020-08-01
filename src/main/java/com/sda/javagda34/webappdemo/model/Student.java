@@ -4,6 +4,8 @@ import com.sda.javagda34.webappdemo.model.Gender;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -31,5 +33,8 @@ public class Student {
     private Gender gender;
 
     private boolean active;
+
+    @OneToMany(mappedBy = "student")
+    private Set<Grade> gradeSet = new HashSet<>();
 
 }
